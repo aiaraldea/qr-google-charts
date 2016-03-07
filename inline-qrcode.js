@@ -15,16 +15,4 @@ function qrcode_code() {
 
 }
 
-$(document).ready( function( ){
-    // Share button behavior
-    $( '.button_share' ).live("click", function( ){
-      console.log('clicked');
-        qrcode_code( );
-    });
-
-    // Tab behavior on stats page
-    $('a[href=#stat_tab_share]').click(function( ){
-        qrcode_code( );
-    });
-});
-
+$(document).ready( function(){ qrcode_code() } );
